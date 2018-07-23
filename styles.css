@@ -1,24 +1,86 @@
 header {
   background-color: #2b2b2b;
+  height: 150px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 72px;
+  margin: 0;
+  margin-right: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: text-shadow 0.2s ease-out;
+}
+
+h1:hover {
+  color: #D499B9;
+  text-shadow:
+       4px 4px 0 #fff,
+     -1px -1px 0 #fff,  
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+       1px 1px 0 #fff;
+}
+
+ul {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+li {
+  color: #fff;
+  cursor: pointer;
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin: 0 20px;
+}
+
+li:hover {
+  color: #D499B9;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cards-section-title {
+  font-weight: 400;
+  margin: 210px 20px 60px;
 }
 
 body {
-
+  background-color: #efefef;
 }
 
 section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 8px;
-  margin: 20px;
+  grid-gap: 20px;
+  margin: 0px 20px 522px;
 }
 
 article {
+  background-color: #fff;
   display: inline-block;
   border-style: solid;
   border-width: 2px;
   border-color: #000;
   position: relative;
+  transition: all 0.2s ease-out;
+}
+
+article:hover {
+  border-color: #D499B9;
+  border-width: 6px;
 }
 
 img {
@@ -26,15 +88,38 @@ img {
   width: 100%;
 }
 
-.arrow-icon {
+.card-image {
+  transition: transform 0.2s ease-out;
+}
+
+.card-image:hover .image-hover-text{
   display: block;
+}
+
+.card-image:focus {
+  transform: scale(1.2);
+}
+
+.image-hover-text {
+  display: none;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 140px;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.arrow-icon {
+  cursor: pointer;
   position: absolute;
   top: 10px;
   left: 10px;
   width: 50px;
 }
 
-h3, h4, h5, textarea {
+h2, h3, h4, h5, textarea {
   font-family: 'Roboto', sans-serif;
   margin-left: 15px; 
   margin-right: 15px;   
@@ -44,15 +129,35 @@ h3, h4 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 5px 15px 30px;
+}
+
+h4 {
+  font-size: 12px;
+  margin: 0 15px;
+}
+
 h5 {
   font-weight: 300;
+  margin: 0 15px;
 }
 
 textarea {
   box-sizing: border-box;
   font-weight: 400;
+  height: 70px;
+  margin: 30px 15px;
+  outline: none;
   resize: none;
   width: calc(100% - 30px);
+  transition: all 0.2s ease-out;
+}
+
+textarea:focus {
+  transform: scale(1.2);
 }
 
 .image-text {
@@ -66,10 +171,21 @@ h4.image-text {
   top: 10px;
 }
 
-h3.image-text {
+h2.image-text {
   top: 30px;
 }
 
-.attachments {
-  color: #25B4FF;
+.recipient-name {
+  margin-bottom: 3px;
+}
+
+.playlist-name {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.num-attachments {
+  color: #D499B9;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
