@@ -1,3 +1,12 @@
 # js-comp-challenge-2
 
-###This README is currently in progress. Expect more later!!
+### original comp: 
+
+
+![alt text](http://frontend.turing.io/assets/images/static-comp-challenge-2.jpg)
+
+
+### my comp:
+
+
+![alt text](images/comp-screenshot.png)
