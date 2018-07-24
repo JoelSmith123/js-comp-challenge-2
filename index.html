@@ -4,15 +4,26 @@
   <title>Static Comp 2 - Joel Smith</title>
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto:300,400,700" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>2Win!</h1>
     <ul>
-      <li><a href=""></a>HOME</li>
-      <li><a href=""></a>ARTISTS</li>
-      <li><a href=""></a>PLAYLISTS</li>
+      <li><a class="home-link" href="#top">HOME</a></li>
+      <li><a href="">ARTISTS</a></li>
+      <li><a href="">PLAYLISTS</a></li>
+      <li class="menu"><a href="">LOGIN</a>
+        <ul class="menu-drop">
+          <li class="menu-content">
+            <form>
+              <input class="username" type="text" name="Username" placeholder="Username:">
+              <input class="password" type="password" name="Password" placeholder="Password:">
+            </form>
+          </li>
+        </ul>
+      </li>
     </ul>
   </header>
   <h2 class="cards-section-title">Performers</h2>
@@ -25,7 +36,7 @@
       <h4 class="image-text">VIEWS</h4>
       <h2 class="image-text">02</h2>
       <h4 class="image-hover-text">CLICK IMAGE TO EXPAND<h4>
-      <h3 class="recipient-name">Recipeint's Namehere</h3>
+      <h3 class="recipient-name">Performing Artist Here</h3>
       <h5>Monday 01/23/16 10:22am</h5>
       <textarea>http://2win.2winstage.com/p/recipients_namehere</textarea>
       <h4>PLAYLIST</h4>
@@ -39,7 +50,7 @@
       <h4 class="image-text">VIEWS</h4>
       <h2 class="image-text">02</h2>
       <h4 class="image-hover-text">CLICK IMAGE TO EXPAND<h4>
-      <h3 class="recipient-name">Recipeint's Namehere</h3>
+      <h3 class="recipient-name">Performing Artist Here</h3>
       <h5>Monday 01/23/16 10:22am</h5>
       <textarea>http://2win.2winstage.com/p/recipients_namehere</textarea>
       <h4>PLAYLIST</h4>
@@ -53,7 +64,7 @@
       <h4 class="image-text">VIEWS</h4>
       <h2 class="image-text">02</h2>
       <h4 class="image-hover-text">CLICK IMAGE TO EXPAND<h4>
-      <h3 class="recipient-name">Recipeint's Namehere</h3>
+      <h3 class="recipient-name">Performing Artist Here</h3>
       <h5>Monday 01/23/16 10:22am</h5>
       <textarea>http://2win.2winstage.com/p/recipients_namehere</textarea>
       <h4>PLAYLIST</h4>
@@ -67,7 +78,7 @@
       <h4 class="image-text">VIEWS</h4>
       <h2 class="image-text">02</h2>
       <h4 class="image-hover-text">CLICK IMAGE TO EXPAND<h4>
-      <h3 class="recipient-name">Recipeint's Namehere</h3>
+      <h3 class="recipient-name">Performing Artist Here</h3>
       <h5>Monday 01/23/16 10:22am</h5>
       <textarea>http://2win.2winstage.com/p/recipients_namehere</textarea>
       <h4>PLAYLIST</h4>
@@ -81,7 +92,7 @@
       <h4 class="image-text">VIEWS</h4>
       <h2 class="image-text">02</h2>
       <h4 class="image-hover-text">CLICK IMAGE TO EXPAND<h4>
-      <h3 class="recipient-name">Recipeint's Namehere</h3>
+      <h3 class="recipient-name">Performing Artist Here</h3>
       <h5>Monday 01/23/16 10:22am</h5>
       <textarea>http://2win.2winstage.com/p/recipients_namehere</textarea>
       <h4>PLAYLIST</h4>
@@ -95,7 +106,7 @@
       <h4 class="image-text">VIEWS</h4>
       <h2 class="image-text">02</h2>
       <h4 class="image-hover-text">CLICK IMAGE TO EXPAND<h4>
-      <h3 class="recipient-name">Recipeint's Namehere</h3>
+      <h3 class="recipient-name">Performing Artist Here</h3>
       <h5>Monday 01/23/16 10:22am</h5>
       <textarea>http://2win.2winstage.com/p/recipients_namehere</textarea>
       <h4>PLAYLIST</h4>
@@ -109,7 +120,7 @@
       <h4 class="image-text">VIEWS</h4>
       <h2 class="image-text">02</h2>
       <h4 class="image-hover-text">CLICK IMAGE TO EXPAND<h4>
-      <h3 class="recipient-name">Recipeint's Namehere</h3>
+      <h3 class="recipient-name">Performing Artist Here</h3>
       <h5>Monday 01/23/16 10:22am</h5>
       <textarea>http://2win.2winstage.com/p/recipients_namehere</textarea>
       <h4>PLAYLIST</h4>
@@ -123,7 +134,7 @@
       <h4 class="image-text">VIEWS</h4>
       <h2 class="image-text">02</h2>
       <h4 class="image-hover-text">CLICK IMAGE TO EXPAND<h4>
-      <h3 class="recipient-name">Recipeint's Namehere</h3>
+      <h3 class="recipient-name">Performing Artist Here</h3>
       <h5>Monday 01/23/16 10:22am</h5>
       <textarea>http://2win.2winstage.com/p/recipients_namehere</textarea>
       <h4>PLAYLIST</h4>
@@ -132,6 +143,7 @@
       <h2 class="num-attachments">04</h2>
     </article>
 </section>
+<h4><a href="#top" class="bottom-page-link">CLICK TO TOP OF PAGE</a></h4>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
